@@ -12,6 +12,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import 'react-toastify/dist/ReactToastify.css'
 import './App.css'
+import { apiUrl } from './config'
 
 function App() {
   const [inputText, setInputText] = useState('')
@@ -72,7 +73,7 @@ function App() {
 
     setIsLoading(true)
     try {
-      const response = await fetch('/api/encode', {
+      const response = await fetch(`${apiUrl}/api/encode`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -106,7 +107,7 @@ function App() {
 
     setIsLoading(true)
     try {
-      const response = await fetch('/api/decode', {
+      const response = await fetch(`${apiUrl}/api/decode`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
