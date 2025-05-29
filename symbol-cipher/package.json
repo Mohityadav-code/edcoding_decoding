@@ -1,0 +1,25 @@
+{
+  "name": "symbol-cipher",
+  "version": "1.0.0",
+  "description": "A tool for encoding and decoding text using Unicode symbols",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install --prefix backend && npm install --prefix frontend",
+    "start": "npm run start --prefix backend",
+    "backend": "npm run dev --prefix backend",
+    "frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "test": "npm test --prefix backend"
+  },
+  "keywords": [
+    "cipher",
+    "encoding",
+    "decoding",
+    "unicode"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
