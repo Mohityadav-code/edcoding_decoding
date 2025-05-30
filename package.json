@@ -1,0 +1,12 @@
+{
+  "name": "symbol-cipher-keep-alive",
+  "version": "1.0.0",
+  "description": "Keep-alive script for Symbol Cipher app on Render",
+  "main": "keep-alive.js",
+  "scripts": {
+    "start": "node keep-alive.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+} 
